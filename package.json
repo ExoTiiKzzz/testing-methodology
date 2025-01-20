@@ -84,10 +84,6 @@
   "c8": {
     "include": [
       "app/**/*.ts"
-    ],
-    "exclude": [
-      "app/exceptions",
-      "app/middleware"
     ]
   }
 }
