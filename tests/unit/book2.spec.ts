@@ -29,8 +29,12 @@ test.group('Book 2', () => {
   test('inutile 2', async ({ assert }) => {
     assert.equal(TddBookService.purchase(2, 1, 1, 1, 1), 40 * 0.75 + 8)
   })
-  //
+
+  test('inutile 2', async ({ assert }) => {
+    assert.equal(TddBookService.purchase(2, 2, 1, 1, 1), 40 * 0.75 + 16 * 0.95)
+  })
+
   // test('inutile 2', async ({ assert }) => {
-  //   assert.equal(TddBookService.purchase(2, 2, 1, 1, 1), 40 * 0.75 + 16 * 0.95)
+  //   assert.equal(TddBookService.purchase(2, 2, 2, 1, 1), 32 * 0.8 + 32 * 0.8)
   // })
 })
