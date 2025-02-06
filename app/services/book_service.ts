@@ -29,6 +29,10 @@ export class BookService {
     let totalBooks = Object.values(books).reduce((acc, nb) => acc + nb, 0)
     total = totalBooks * this.basePrice
 
+    if (this.differentBooks(books) === 1) {
+      return total
+    }
+
     while (totalBooks > 1) {
       differentBooks = this.differentBooks(books)
       totalBooks -= differentBooks
