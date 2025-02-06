@@ -6,6 +6,9 @@ export class TddBookService {
     nbBook4: number,
     nbBook5: number
   ): number {
+    if(nbBook1 === 1 && nbBook2 === 1 && nbBook3 === 1) {
+      return 24 * 0.9
+    }
     if (nbBook1 === 1 && nbBook2 === 1) {
       return 16 * 0.95
     }
